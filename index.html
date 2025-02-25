@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu servicio de salud a la mano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Consulta de Servicios de Salud</h2>
+        <p>Selecciona una opción para ver su información:</p>
+        <div class="options">
+            <div class="option-card" onclick="window.location.href='https://reportes.sisben.gov.co/dnp_sisbenconsulta'">
+                <p class="textoCard">Aquí puedes consultar tu nivel de Sisbén</p>
+                <img src="https://i.postimg.cc/hP0tqtHc/sisben.png" alt="Sisbén" class="logo">
+            </div>
+            <div class="option-card" onclick="window.location.href='https://www.adres.gov.co/consulte-su-eps'">
+                <p class="textoCard">Aquí puedes saber cuál es tu EPS</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmbFiHkN6Mk8RUTXzJf47Jahqh3K_0tDyQLA&s"
+                    alt="ADRES" class="logo">
+            </div>
+            <div class="option-card" onclick="mostrarInfo('eps')">
+                <p class="textoCard">Contacta con tu eps</p>
+            </div>
+            <div class="option-card" onclick="mostrarInfo('copagos')">
+                <p class="textoCard">Información sobre copagos y cuotas moderadoras</p>
+            </div>
+        </div>
+
+        <div id="info-eps" class="info-box">
+            <p>Aqui puedes acceder a la plataformas de tu EPS</p>
+            <div class="eps-list">
+                <div class="option-card" onclick="window.location.href='https://www.nuevaeps.com.co'">
+                    <img src="https://adresfosyga.co/wp-content/uploads/2020/05/Nueva-EPS-Logo.png" alt="Nueva EPS"
+                        class="logo">
+                </div>
+                <div class="option-card" onclick="window.location.href='https://www.epssanitas.com'">
+                    <img src="https://logowik.com/content/uploads/images/eps-sanitas-colombia2087.logowik.com.webp"
+                        alt="Sanitas" class="logo">
+                </div>
+                <div class="option-card" onclick="window.location.href='https://www.epssura.com'">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Grupo_Sura_logo.svg/1280px-Grupo_Sura_logo.svg.png"
+                        alt="SURA" class="logo">
+                </div>
+                <div class="option-card" onclick="window.location.href='https://www.coosalud.com'">
+                    <img src="https://owlpublicidadsas.com/wp-content/uploads/2020/06/coopsalud-logo-1.png"
+                        alt="Coosalud" class="logo">
+                </div>
+                <div class="option-card" onclick="window.location.href='https://www.cajacopieps.com'">
+                    <img src="https://www.cajacopi.com/Content/Imagenes/Logo/logocaja.png" alt="Cajacopi" class="logo">
+                </div>
+                <div class="option-card" onclick="window.location.href='https://saludtotal.com.co'">
+                    <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=400,h=400,fit=crop/A0xo1arw41t99DJA/2-salud-total-eps-mxBzENnkJQS6aMZN.png"
+                        alt="Salud Total" class="logo">
+                </div>
+                <div class="option-card"
+                    onclick="window.location.href='https://www.aliansalud.com.co/Paginas/default.aspx'">
+                    <img src="https://famicareclinicadia.com/wp-content/uploads/2024/07/logo-aliansalud-VERDE.png"
+                        alt="Aliansalud" class="logo">
+                </div>
+                <div class="option-card" onclick="window.location.href='https://www.mutualser.com/'">
+                    <img src="https://acceso.mutualser.com/images/logos/mobile/customMobLogo.png" alt="Mutual Ser"
+                        class="logo">
+                </div>
+                <div class="option-card" onclick="window.location.href='https://www.capitalsalud.gov.co/'">
+                    <img src="https://adresfosyga.co/wp-content/uploads/2021/01/Capital-Salud-EPS.png"
+                        alt="Capital Salud" class="logo">
+                </div>
+                <div class="option-card" onclick="window.location.href='https://www.capresoca-casanare.gov.co/'">
+                    <img src="https://www.casanare.gov.co/Prensa/PublishingImages/unnamed.jpg" alt="Capresoca"
+                        class="logo">
+                </div>
+                <div class="option-card" onclick="window.location.href='https://corporativo.compensar.com/'">
+                    <img src="https://asdf.amerins.com/uploads/compensar_8d5a969eb2.png" alt="Compensar" class="logo">
+                </div>
+                <div class="option-card" onclick="window.location.href='https://www.famisanar.com.co/'">
+                    <img src="https://staticnew-prod.topdoctors.com.co/insurance/100180/image/small/572ccd6a-4c2c-4245-8729-7d769e4504ad.png"
+                        alt="Famisanar" class="logo">
+                </div>
+                <div class="option-card" onclick="window.location.href='https://www.famisanar.com.co/'">
+                    <img src="https://www.cundinamarca.gov.co/wcm/connect/5255b674-be7b-4acd-b810-acad4bfc3ac6/Convida.jpg?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-5255b674-be7b-4acd-b810-acad4bfc3ac6-mJyb6Il"
+                        alt="Convida" class="logo">
+                </div>
+                <div class="option-card" onclick="window.location.href='https://www.saviasaludeps.com/sitioweb/'">
+                    <img src="https://www.saviasaludeps.com/sitioweb/images/logo1.png" alt="Savia Salud" class="logo">
+                </div>
+            </div>
+        </div>
+        <div id="info-copagos" class="info-box">
+            <p class="titulosListas"><strong>Cuotas Moderadoras (regimen contributivo):</strong></p>
+            <ul class="lista">
+                <li>Menor a 2 SMLMV: $4.700.</li>
+                <li>Entre 2 y 5 SMLMV: $19.200.</li>
+                <li>Mayor a 5 SMLMV: $50.300.</li>
+            </ul>
+            <p class="titulosListas"><strong>Copagos:</strong> Porcentaje del valor del servicio</p>
+            <ul class="lista">
+                <li>Menor a 2 SMLMV: 11,50% Maximo a pagar por evento es: $356.548.</li>
+                <li>Entre 2 y 5 SMLMV: 17,30% Maximo a pagar por evento es: $1.428.678.</li>
+                <li>Mayor a 5 SMLMV: 23,00%. Maximo a pagar por evento es: $2.857.356.</li>
+            </ul>
+            <p class="titulosListas"><strong>Regimen subsidiado</strong> no se cobran cuotas moderadoras, pero los
+                copagos <strong>SI</strong>
+            </p>
+            <ul class="lista">
+                <li>Porcentaje del valor del servicio: Máximo del 10% Maximo a pagar por evento es: $621.164.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

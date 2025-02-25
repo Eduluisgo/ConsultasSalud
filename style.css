@@ -1,0 +1,93 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    color: #343a40;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.option-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background 0.3s;
+    cursor: pointer;
+    width: 180px;
+}
+
+.option-card:hover {
+    transform: scale(1.05);
+    background: #f1f3f5;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.info-box {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.eps-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.titulosListas {
+    text-align: left;
+}
+
+.lista {
+    list-style-position: inside;
+    /* Asegura que los puntos estén dentro */
+    margin-left: 0;
+    /* Elimina cualquier margen izquierdo */
+    padding-left: 20px;
+    /* Ajusta la sangría de la lista */
+}
+
+.lista li {
+    margin-bottom: 15px;
+    /* Agrega espacio entre los elementos de la lista */
+    text-align: left;
+    /* Asegura que el texto esté alineado a la izquierda */
+}
+
+.textoCard {
+    font-weight: bold;
+}
